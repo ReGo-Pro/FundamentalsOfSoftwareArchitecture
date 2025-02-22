@@ -3,12 +3,47 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Layered Monolith", "1. Layered Monolith", "{7066CFB2-62A5-40B8-BACD-6343972BBCB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Distributed", "2. Distributed", "{B5A8840C-B268-432C-9121-6547B11909DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.a Topic", "2.a Topic", "{AD287859-7F0C-47E9-95FC-E143CD3981B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.b Direct", "2.b Direct", "{D8F09006-F9F7-46E2-8357-9899EEDC2104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiddingSystem.Models", "BiddingSystem.Models\BiddingSystem.Models.csproj", "{F7540FAA-2870-49BF-AC45-78A37A3D287F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiddingSystem.Services", "BiddingSystem.Services\BiddingSystem.Services.csproj", "{AD5C317D-48AB-47BD-9632-F44808F8AD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiddingSystem.API", "BiddingSystem.API\BiddingSystem.API.csproj", "{93D4F891-0D0B-4258-87BA-3F8673A5D034}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7540FAA-2870-49BF-AC45-78A37A3D287F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7540FAA-2870-49BF-AC45-78A37A3D287F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7540FAA-2870-49BF-AC45-78A37A3D287F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7540FAA-2870-49BF-AC45-78A37A3D287F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD5C317D-48AB-47BD-9632-F44808F8AD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD5C317D-48AB-47BD-9632-F44808F8AD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD5C317D-48AB-47BD-9632-F44808F8AD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD5C317D-48AB-47BD-9632-F44808F8AD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D4F891-0D0B-4258-87BA-3F8673A5D034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D4F891-0D0B-4258-87BA-3F8673A5D034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D4F891-0D0B-4258-87BA-3F8673A5D034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D4F891-0D0B-4258-87BA-3F8673A5D034}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD287859-7F0C-47E9-95FC-E143CD3981B8} = {B5A8840C-B268-432C-9121-6547B11909DF}
+		{D8F09006-F9F7-46E2-8357-9899EEDC2104} = {B5A8840C-B268-432C-9121-6547B11909DF}
+		{F7540FAA-2870-49BF-AC45-78A37A3D287F} = {7066CFB2-62A5-40B8-BACD-6343972BBCB8}
+		{AD5C317D-48AB-47BD-9632-F44808F8AD81} = {7066CFB2-62A5-40B8-BACD-6343972BBCB8}
+		{93D4F891-0D0B-4258-87BA-3F8673A5D034} = {7066CFB2-62A5-40B8-BACD-6343972BBCB8}
 	EndGlobalSection
 EndGlobal
