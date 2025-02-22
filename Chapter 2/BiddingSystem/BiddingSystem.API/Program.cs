@@ -1,3 +1,4 @@
+using BiddingSystem.Services;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddScoped<IBidProcessor, BidCapture>();
+builder.Services.AddScoped<IBidProcessor, BidAnalyzer>();
+builder.Services.AddScoped<IBidProcessor, BidTracker>();
 
 var app = builder.Build();
 
