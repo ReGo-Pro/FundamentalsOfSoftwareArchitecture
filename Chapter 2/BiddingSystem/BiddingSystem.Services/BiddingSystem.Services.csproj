@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BiddingSystem.Models\BiddingSystem.Models.csproj" />
+  </ItemGroup>
+
 </Project>
