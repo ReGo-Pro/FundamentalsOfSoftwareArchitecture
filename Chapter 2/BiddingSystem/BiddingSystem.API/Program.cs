@@ -1,3 +1,5 @@
+using Scalar.AspNetCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,6 +13,11 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment()) {
 	app.MapOpenApi();
+	app.MapScalarApiReference(opt => {
+		opt.WithTitle("Bidding System API");
+		opt.WithTheme(ScalarTheme.Saturn);
+		opt.WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
+	});
 }
 
 app.UseHttpsRedirection();
